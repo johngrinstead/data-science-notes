@@ -1,0 +1,148 @@
+Intro to Data Science	
+
+Data: Digital representation of Information
+Science: Applied scientific knowledge for formal sciences
+Data Science: Formal, applied science that analyzes large amounts of data to provide meaningful information that can be used to make decisions and solve problems.
+	-The purpose of data science is to provide actionable intelligence to make 			predictions
+
+Common Misconceptions
+	-Statistics
+		-Statistics is used in Data Science but is only a small part
+		-Data Science finds answers to questions using Statistics
+	-Business Analysis
+		-Rarely involves unstructured data
+		-Usually work within spreadsheets/Data science takes info out of 					spreadsheets
+		-Data science works with larger sets of data
+		-light on “decision science” heavy on KPI (Key Performance Indicator) 				reporting
+	-Data Science
+		-No common understanding among every Data Scientist 
+	-Python
+		-Knowing a programming language does not make one a data scientist	
+		
+Data Products
+	Product Recommendations
+		-Recommended products based on other products you purchase
+		-People who purchased similar items also purchased other items
+	-Target Marketing: Banner ads or social media ads
+	-Virtual Assistants: Alexa, Hey Google, Siri
+	-Logistics: UPS shaved 20 million miles off routes after learning right turns take 			less time	
+	-Business Operations: Predicting Churn
+	-Product Management: Predicting life cycle of a product
+	-Insurance: Liklihood of disease, auto accident, flooding for insurance premiums
+	-Meteorology: Path a hurricane may take
+	-Security and Defense: Terrorism, cyber attacks
+	-Sales: Likelihood of engagement
+
+Key Concepts
+	-Algorithms
+		-The foundation of Artificial Intelligence, Machine Learning, and Deep 				Learning
+		-Recipes for computers
+		-Series of repeatable steps to accomplish specific task of solve problem
+	-Machine Learning (ML)
+		-Helps computers predict outcome without explicit human input 
+		-Process of “learning” patterns in a set of observations
+		-Model then used to predict new outcomes
+	-Artificial Intelligence (AI)
+		-Began in 1950’s to complete simple tasks
+		-AI does not always enable Machine Learning
+		-Classic AI is unable to learn
+	-Intersections of ML and AI
+		-Once a program collects info with ML, AI can be used to create a new 				algorithm so ML can update it’s algorithm
+		-Deep Learning (DL) is a subset of ML and AI that uses neural network 				algorithms, or Artificial Neural Networks (ANN)
+			-Falls under ML category
+
+Supervised vs Unsupervised Machine Learning
+	-Supervised Machine Learning: Uses labeled observations with a known 				outcome from human input to develop and model that can predict outcomes 
+		- Answers == labels == supervised learning
+	-Unsupervised Machine Learning: Does not rely on labeled observations
+		-Learns differences through observations and assigns own labels
+	-Reinforcement Learning: A subset of Unsupervised Learning
+		-An “Agent” is incentivized to learn through trial and error
+			-Positive and Negative reinforcement for desired and undesired 					actions
+
+Structured vs. Unstructured Data
+	-Big Data
+		-More data than can fit on one laptop computer
+		-4 V’s
+			-Volume
+			-Velocity
+			-Variety
+			-Veracity (Relevancy)
+
+	-Unstructured Data: Does not fit in a predefined data model
+		- Images, Emails, Videos, Audio
+	-Structured Data: Can fit into a predefined model
+
+Building Models
+	-Data Modeling: building mathematical or statistical models that turn data into 			predictive and actionable information, can predict outcomes
+	-Hyperparameter: A configuration external to a specific model
+		-Not from estimated data/manually specified
+	-Parameter: A configuration that is internal to the model
+		-estimated or learned from the data model
+	-Features: The attributes, x, predictor, or independent variable
+	-Feature Engineering: Process of using domain knowledge of the data to create 			new features
+	-Target Variable: The y, outcome, or the dependent variable, the “unknown”
+		-What the program wanted to learn
+	-Data Visualization	
+		- 1. Explore data and understanding the meaning	
+		- 2. Communicate to others
+
+Programming Languages
+	-Python
+		-Object oriented
+		-Top data libraries (numpy, pandas, stats models)
+		-Easy to learn
+		- slower speed
+	-R
+		-Open-Source
+		-Optimal for statistic
+		-Slow performance, not good for great amounts of data	
+	-Julia
+		-High performance
+		-Very fast
+		-Still early in development, not very consistent
+	-Scala
+		-Seamless integration with Apache Spark
+		-Not easy to learn
+
+Database Platforms
+	-SQL: Structured Query Language
+		-Structured data only
+		-Business Intelligence 
+		-Microsoft SQL, MySQL, PostgresQL, Oracle
+	-NoSQL: Not Only SQL
+		-Used for big data or unstructured data
+		-Allows scaling
+	-Graph-based
+		-Social network analysis
+
+Data Visualization
+	-Tableau
+		-Great for BI
+	-plot.ly
+	-D3.js
+	-Matplotlib
+		-2d plotting
+	-Seaborn
+		-Python Matplotlib
+Data Governance
+	-Spark
+		-Written in Scala
+			-Can use R or Python
+		-Increasingly common
+	-Hadoop
+		-Original big platform data
+		-Being replaced by Spark
+	-Storm
+		-Realtime processing
+
+Version Control Systems (VCS)
+	-Git
+	-Github
+	-Gitlab
+
+Evolution and Trends in Data Science
+	-Storage getting cheaper
+	-CPU getting cheaper
+	-Bandwidth getting cheaper
+	-Data growing exponentially 

@@ -1,0 +1,73 @@
+Data Science Pipeline
+Planning	
+Stakeholders ask general or extremely specific questions that are difficult to answer
+Who cares?/Why do they care?
+The goal: Clearly define goals/ measure of success
+The Deliverable: documentation of your goal
+How to get there: Asking questions about what the final product will look like
+What will the end product look like
+What will the format be
+Who will it be delivered to
+How will I know when I’m done
+What is my MVP (Minimal Viable Product)?
+How will I know if it’s good enough?
+-Formulating Hypotheses
+    -Is attribute V! Related to V2
+
+Acquisition
+	-AKA: Data gathering, data import
+	-The Goal: Create a path from original data sources 
+	-The Deliverable: a file, acquire.py, that contains the the functions needed to 			reproduce the acquisition 
+	-How to get there: 
+		-Data scraping from websites
+		-raw data from local flat files
+		-using python library pandas
+		-clean up or manipulation of data in SQL environment
+
+Preparation
+	-AKA: Data cleansing, Data Wrangling (acquisition + Prep)
+	-The goal: split data into 3 samples, to learn a general pattern
+		-Train
+		-Validate
+		-Test
+	-The deliverables: a file, prep.py, from all 3 samples
+	-How to get there:
+		-Python pandas
+		-identify and handle outliers
+		-turn string into numbers (change data types)
+		-plot distribution skew
+Exploration and Pre-Processing
+	-do exploration on training data
+	-AKA: Feature exploration
+	-The goal; discover the features that have the largest impact on the target variable
+	-The deliverable: processes.py, with functions to reproduce the preprocessing
+	-How to get there
+		-Use python pandas, stats models, bumpy, Matplotlib
+		-perform statistical testing
+		-create visualizations between variables and targets
+			-explore stage is where you find most of your takeaways
+		-use domain knowledge to determine which features do and do not coincide with the goal
+
+Model
+	-the Goal: to create a model mapping features and target outcome
+	-the deliverable: model.py, contains functions for the training model
+	-How to get there
+		-Create model
+		-fit the model to training
+		-predict target value
+		-Evaluate how good that model is
+		-repeat as necessary with other algorithms and hyper parameters 
+		-predict on test
+		-evaluate results on out of sample predictions 
+
+Delivery
+	-The goal: enable other people to use what you have learned 
+	-The Deliverable
+		-pipeline.py
+		-fully deployed model on internet
+		-reproducible report 
+		-set of predictions
+		-data dashboard 
+	-How to get there 
+		-python’s pipeline method
+		-Tableau presentation
