@@ -1,0 +1,19 @@
+Limit takes a query and returns only the specified amount of results
+    select *
+    from employees LIMIT 10;
+        will return only the first 10 results 
+
+Offset works with with Limit    
+    offset is ALWAYS set to 0 by default 
+
+    select *
+    from employees
+    limit 10 offset 10;
+        will return 10 results starting with #11
+            #11-20
+        can be referred to as page 2
+    
+    limit 10 offset 20;
+        will return page 3, results 21-30
+
+        

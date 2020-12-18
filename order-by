@@ -9,4 +9,6 @@ SELECT column FROM table ORDER BY column_name [ASC|DESC];
     can sort by ascending or descending 
         order by column1 ASC, column2 DESC
 
-        
+
+Query results will ALWAYS be ordered by primary key ASC by deafult
+
