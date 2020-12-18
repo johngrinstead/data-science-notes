@@ -1,0 +1,36 @@
+Clauses
+
+WHERE
+	Finds where the condition is met
+
+	SELECT * FROM employees WHERE hire_date = ‘1985-01-01';
+		will only return employees hired on 01/01/1985
+
+LIKE
+	Uses wildcard (%) to find where conditions are similar
+
+
+	SELECT first_name
+FROM employees
+WHERE first_name LIKE ‘%sus%';
+	will return employees whose name has the pattern “sus” in name
+
+AND, OR, NOT
+	Logical operators 
+
+	AND: Only returns if both conditions are true
+		Limits possibilities
+	OR: Will return if at least one condition is true
+		Expands possibilities
+	NOT: Will return where conditions are not true
+		Excludes possibilities 
+
+	Can combine logical operators 
+		use parentheses to define order of operations
+
+IN
+	Will return where any condition in a set is true
+
+NULL
+	Use IS Null or NOT NULL to check for values that are or are not null
+
