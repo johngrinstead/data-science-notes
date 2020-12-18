@@ -1,0 +1,25 @@
+similar to a SELECT DISTINCT query and order by
+    group by unique values
+
+    goes at the end of query
+        only thing that goes after group by would be a limit
+
+select count(*) 
+from salaries;
+    will count ALL salaries
+
+select distinct salary 
+from salaries;
+    will return all unique salaries 
+
+select * 
+from salaries
+group by salary;
+    will return all unique salaries ordered numericaly (ASC)
+
+    can be run DESC to reverse order 
+
+can group by an alias or by a functions results 
+
+can add aggregate functions to to group by
+

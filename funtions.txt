@@ -28,7 +28,7 @@ SUBSTR
         will return 4 characters after the 2 character 
 
 Case Conversion
-******
+ Used to convert a string into upper or lower case letters
 
 Replace
     Used to replace a string in a column with a new string
