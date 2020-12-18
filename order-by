@@ -1,0 +1,12 @@
+SELECT column FROM table ORDER BY column_name [ASC|DESC];
+    If this command is used the results are ordered by the specified column
+    
+    always at the end of the query
+
+    can order by multiple columns 
+        order by column1, column2, column3,...
+
+    can sort by ascending or descending 
+        order by column1 ASC, column2 DESC
+
+        
