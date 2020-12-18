@@ -1,0 +1,82 @@
+Count
+    will count results
+
+    select count(*)
+    from employees;
+        will count how many results appear
+
+Concat
+    will add strings together
+
+    select concat(first_name, " ", last_name)
+    from employees;
+        will make a new column making a string out of first and last names
+
+        you will need to add a space (" ") between words
+    
+    can contain as many columns as desired 
+
+Like
+    Will only work in Where clauses
+
+SUBSTR
+    Used to extract part of a string
+
+    SELECT SUBSTR('abcdefg', 2, 4);
+        will return 'cdef'
+
+        will return 4 characters after the 2 character 
+
+Case Conversion
+******
+
+Replace
+    Used to replace a string in a column with a new string
+
+    select replace (title, "Senior", "Lead")
+        will replace the string 'Senior' with the string 'Lead' on everyone in the title column
+
+                        
+                        
+                        
+                        
+                        
+                        DATE AND TIME
+
+
+NOW
+    returns current TIME
+
+CURDATE
+    will return current date in YYYY/MM/DD format
+
+CURTIME
+    will return current time in HH:MM:SS format
+
+UNIX_TIMESTAMP
+    will return the amount of time that has passed from Jan 1, 1970
+        the dawn of modern computers 
+
+
+
+
+
+                    NUMERICAL FUNCTIONS
+
+avg
+    will return the average int of a column
+
+min 
+    will return the smallest int in a column
+
+Casting
+    used to convert a number in a string into an int 
+
+    SELECT
+        CAST (123 as CHAR)
+        CAST ('123' as UNISIGNED);
+
+
+
+
+    
