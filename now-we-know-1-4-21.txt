@@ -1,0 +1,138 @@
+Now We Know Game
+
+I set a timer for 60 seconds.
+In that time, you shout out something you know that you know.
+Something that you've acquired..
+My job is to type it down as fast as I can
+See if you can state things you know faster than I can type
+Collaborative 
+As many participating as possible
+
+
+
+Now I know:
+- how to clone a repo in github
+- select is from the db and from is the table
+    - 
+- my terminal workflow
+- SQL joins
+- default in order by is ascending
+- how to use wildcard in SQL
+- CRUD stands for create, read, update, delete
+- how to use WHERE clauses
+- basic select statements
+- working with concat
+- how to push your work as soon as you make updates
+- create repositories
+- how to create ignored files
+- aggregate functions
+    - functions that work on a list
+    - count, average, min, max
+
+
+## I think I've Got It, but I'm not too sure about ....
+- actually creating tables in sql
+    - we will be creating tables from queries (later)
+        - we will create temporary tables
+        - it's super easy to remove the temporary part and have a new table
+    - The Table creation syntax/commands are what we see when we look at:
+        - Table Info in Sequel Pro
+        - When we run the Show Create Table Tablename command.
+        - CREATE TABLE table_name (
+                id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                author_first_name VARCHAR(50),
+                author_last_name  VARCHAR(100) NOT NULL,
+                content TEXT NOT NULL,
+                PRIMARY KEY (id)
+        );
+- distinct vs. group by
+    - All distinct does is returns unique values (numbers, strings, dates, whatever)
+```
+use employees;
+
+select distinct first_name
+from employees;
+
+# This query produces output that is identical to the above SELECT DISTINCT
+# Group By Does 3 Things
+# 1. The column we Group By works like selecting distinct
+# 2. Group By sorts our disinct values by the column we group by
+# Aggregate functions: count, average, median, min, max, standard deviation, etc..
+select first_name
+from employees
+group by first_name;
+```
+
+- Any time we aggreate or group by a column, we're changing and redefininig our level of observation:
+    - Level of observation == what each row means and signifies
+    - So what does that mean?
+        - Take the employees table. What is each row? What does each row represent in the world? One employee.
+        - If we do select first_name, group by first name, what do the rows of the output represent?
+            - We're redifining our observation, each row, is a unique first_name
+
+```
+# The group by redefines our observation to be first_names (not individuals)
+# Because we grouped by first_name, we can run count(*) to show the number of duplicate first_names
+select first_name, count(*)
+from employees
+group by first_name;
+
+```
+
+Aggregate functions like count, avg, min, max, average don't need group by to run. We can average a list of numbers all day. But, groupping by allows us to use our aggregate function(s) on each group.
+```
+# How many people work in each department?
+# "How many" == English for "Count"
+# "Each Department" == English for Group By dept_no
+# Trick: The column we group by is the column that comes after our english "Each X"
+# If I say I want count for each dept_no, then we group by dept_no.
+# We get the aggregate for each group
+select dept_no, count(dept_no)
+from dept_emp
+group by dept_no;
+```
+
+
+```
+# Get the department with the highest range (max - min) salary
+select dept_no, max(salary) - min(salary) as "salary_range"
+from salaries
+join dept_emp using (emp_no)
+group by dept_no
+order by salary_range DESC
+LIMIT 1;
+```
+
+
+- if we have to use group by every time we use count - no.
+    - short answer: no. We can just count stuff.
+    - If we group by, however, we can count occurrences in each group.
+
+- SQL troubleshooting (error messages or how to make a query)
+    - Remember to put The error message + MySQL in ytour search.
+    - "Googling the error message" should give you something to work with..
+    - "Google the error message" sounds like great advice, unless the results don't make any sense.
+    - Break things down.
+    - do one part of the query at a time.
+    - Start small - break the problem down and build your solution up
+    - Usually, folks are trying to do too much at once...
+- working with time in MySQL
+    - we have date + time data types in MySQL
+    - date, time, datetime
+    - Be sure to put quotes around times so we're not doing math 2020-12-05 vs "2021-01-04"
+    - stick with the YYYY-MM-DD format, wherever/whenever you can
+- formatting queries (line breaks, syntax)
+- select statements in select statements
+    - these are a thing!
+    - SubQueries help us solve multi-step problems
+- the different kinds of joins
+    - left, inner, right, and some other wacky ones
+    - we'll use left and inner a bunch.
+- knowing when to use WHERE and HAVING
+    - WHERE is super powerful
+- CASE statements
+    - case statements are if/elses for SQL
+    - covering them later this week!
+- How to find Median
+    - b/c MySQL, we'd have to calculate this using other MySQL arithmetic functions
+    - realtalk - we'll "median" the heck out of our data.. in Pandas/python
