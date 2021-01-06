@@ -1,0 +1,21 @@
+# Be sure to use your own database (based on your username)
+use ryan;
+CREATE TEMPORARY TABLE my_numbers(
+    n INT UNSIGNED NOT NULL 
+);
+INSERT INTO my_numbers(n) VALUES (1), (2), (3), (4), (5);
+select * 
+from my_numbers;
+update my_numbers
+set n = n + 1;
+select * from my_numbers;
+update my_numbers
+set n = 500
+where n = 3; # using the where to isolate specific row(s)
+select * from my_numbers;
+# removes all records from 
+delete from my_numbers;
+select * from my_numbers;
+delete from my_numbers where n = 3;
+select * from my_numbers;
+
