@@ -1,0 +1,11 @@
+0. "python" on its own on the terminal enters a REPL
+1. "ipython" on its own on the terminal enters a REPL w/ more bells + whistels
+2. "python filename.py" is how run a specific python script from the command line.
+3. "jupyter notebook" runs the jupyter notebook server in your pwd.
+4. "jupyter notebook notebook_name.ipynb" to run a specific notebook on the server 
+
+# You can run highlighted code in VS Code with Shift + Enter
+# Install Python package from Microsoft
+# command + shift + p
+# then type install
+# then type python
