@@ -1,0 +1,46 @@
+bool: true/false
+
+str: string, a sequence of characters "strung together
+
+int: integer, whole numbers
+
+float: numbers with decimals
+
+list: ordered sequence of values
+
+dict collection of values and names
+
+nonetype: null
+
+type(variable)
+    -will tell you data type of variable in parenthsis
+
+    -type(123)
+        -int
+
+    -type('John')
+        -str
+
+    type(print('Hello'))
+        -nonetype
+            -print function will always return nonetype
+
+today = 'Today is a beautiful day'
+    print(today)
+        -will return 'Today is a beautiful day'
+
+********variables can be reassigned**********
+
+today = '1/12/21'
+    print(today)
+        -will return '1/12/21'
+
+data types of variables can be changed 
+
+-price = 1.99
+    -float
+
+    -int(price)
+        -will return integer '1'
+
+
